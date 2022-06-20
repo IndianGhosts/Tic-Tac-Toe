@@ -1,7 +1,10 @@
 public class playero{
   int oX;
   int oy;
-  int lives;
+  String win;
+  String lose;
+  String draw;
+
   
   public playero(){
     
