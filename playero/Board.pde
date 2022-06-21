@@ -46,7 +46,12 @@ public class Board{
   rect(600,600,200,200);
   fill(0,0,0); 
   rect(800,800,200,200); 
-  
+ for (int i=0; i<5; i++){
+ if (square [i][i] == 1){
+  circle((i*200)+100,(i*200)+100,100);
+  }
+ }
+ 
  
  }
  
