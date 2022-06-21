@@ -1,17 +1,19 @@
-public class gamePiece{
-int Xx;
-int Xy;
-int Yx;
-int Yy;
-
-public gamePiece(){
+gamePiece g = new gamePiece();
+Board b = new Board();
+void setup(){
+  background(0,0,0);
+  size(1000,1000);
 }
- void mousePressed(){
- public void drawGamePieceO(){
-  if (mouseX>=0 && mouseX<=200 && mouseY >= 0 && mouseY<= 200){
-    
-   }
-  }
- }
 
+void draw(){
+  b.drawBoard();
+  if (mousePressed==true){
+    g.drawGamePiece();
+  }
+  
+ 
+}
+
+void mouseClicked(){
+  
 }
