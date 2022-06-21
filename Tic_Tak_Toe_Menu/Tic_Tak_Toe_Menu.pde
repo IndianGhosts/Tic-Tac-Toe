@@ -1,11 +1,21 @@
-Rect startButton = new rect(150,100,100,25);
-Rect quitButton = new rect(150,150,100,25);
-
+Buttons startButton;
+Buttons quitButton;
+Board b = new Board();
 void setup(){
-int startButton;
-int quitButton;
-boolean gameStarted=false;
-boolean startHover;
-boolean quitHover;
+  size(1000, 1000);
+  startButton = new Buttons(150, 100, 10, 10); //<>//
 
+}
+
+  void draw() {
+  rect(25, 25, 50, 50);
+  }
+void mousePressed() {
+  if (mouseButton == LEFT) {
+      b.drawBoard();
+  } else if (mouseButton == RIGHT) {
+    fill(255,255,255);
+  } else {
+    fill(255,255,255);
+  }
 }
