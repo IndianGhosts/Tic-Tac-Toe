@@ -43,5 +43,7 @@ void draw(){
 }
 
 void mousePressed(){
-  
+  if (mouseX>=0 && mouseX<200 && mouseY>=0 && mouseY<200){
+  circle(100,100,100);
+  }
 }

@@ -7,7 +7,9 @@ int Yy;
 public gamePiece(){
 }
 
+public void drawGamePiece(){
 
+}
 
 
 }
