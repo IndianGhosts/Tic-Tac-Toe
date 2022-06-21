@@ -6,10 +6,10 @@ int Yy;
 
 public gamePiece(){
 }
+ void mousePressed(){
  public void drawGamePieceO(){
-  for (int i; i<=25; i++){
-   if (e[i]==true){
-   circle()
+  if (mouseX>=0 && mouseX<=200 && mouseY >= 0 && mouseY<= 200){
+    
    }
   }
  }
