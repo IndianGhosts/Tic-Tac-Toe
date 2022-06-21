@@ -83,6 +83,7 @@ public void drawGamePiece(){
  }    
  if (mouseX>=0 && mouseX<200 && mouseY>=0 && mouseY<200){
   b.square [4][4]=1; 
- }  
+ }
+
  }    
  }
