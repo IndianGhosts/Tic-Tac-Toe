@@ -9,8 +9,6 @@ void setup(){
 
 void draw(){
   b.drawBoard();
-      println(mouseX);
-    println(mouseY);
   if (mousePressed==true){
     g.drawGamePiece();
 
