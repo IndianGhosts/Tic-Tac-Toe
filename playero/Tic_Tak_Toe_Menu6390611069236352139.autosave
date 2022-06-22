@@ -1,0 +1,14 @@
+Buttons startButton;
+Buttons quitButton;
+
+
+ 
+void mousePressed() {
+  if (mouseButton == LEFT) {
+      b.drawBoard();
+  } else if (mouseButton == RIGHT) {
+    fill(255,255,255);
+  } else {
+    fill(255,255,255);
+  }
+}

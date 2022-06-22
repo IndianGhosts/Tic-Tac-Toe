@@ -5,15 +5,14 @@ public class Buttons{
   int h;
   
   public Buttons(int newX, int newY, int newW, int newH){
-    x = newX;
-    y = newY;
-    w = newW;
-    h = newH;
-    drawsButton();
+    newX = 20;
+    newY = 20;
+    newW = 30;
+    newH = 30;
   }
   
   public void drawsButton(){
-    rect(x, y, w, h); 
+    rect(20, 20, 30, 30); 
   }
  
 }
