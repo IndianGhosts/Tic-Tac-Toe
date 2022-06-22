@@ -189,10 +189,14 @@ if (t%2==0){
  } 
 }
  public void drawSquare(int g, int p){
- square((g*200)+50,(p*200)+50,100);
+ if (b.square[g][p] == null){
+   square((g*200)+50,(p*200)+50,100);
+ }
  }
  public void drawCircle(int g, int p){
- circle((g*200)+100,(p*200)+100,100);
+ if (b.square[g][p] == null){
+   circle((g*200)+100,(p*200)+100,100);
+ }
  }
  }
  

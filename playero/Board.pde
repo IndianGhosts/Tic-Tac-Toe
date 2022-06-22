@@ -46,19 +46,5 @@ public class Board{
   rect(600,600,200,200);
   fill(0,0,0); 
   rect(800,800,200,200); 
- for (int i=0; i<5; i++){
-   for(int j = 0; j < 5; j++){
-     if (square [i][j] == 1){
-        circle((i*200)+100,(j*200)+100,100);
-        println(g.t);
-        println(g.turnCount);
-    }else if (square [i][j] == 2){
-    square((i*200)+50,(j*200)+50,100);
-      
         }
-     }
-   }
- }
- 
- 
 }
