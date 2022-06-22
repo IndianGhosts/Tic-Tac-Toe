@@ -1,4 +1,3 @@
-int turnCount;
 gamePiece g = new gamePiece();
 Board b = new Board();
 Buttons s = new Buttons(20, 20, 30, 30);
@@ -19,8 +18,4 @@ s.drawsButton();
   }
   
  
-}
-
-void mouseClicked(){
-  turnCount = turnCount + 1;
 }
