@@ -58,10 +58,12 @@ public class Board{
       println(g.t);
         println(g.turnCount);
       
-    }
+        }
+     }
    }
- }
- 
+    if(turnCount % 2 != 0){
+     square(i*200+50);
+   }
  
  }
  
