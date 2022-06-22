@@ -10,6 +10,7 @@ public void drawGamePiece(){
   }else{
   t=2;
   }
+  turnCount=turnCount+1;
   if (mouseX>=0 && mouseX<200 && mouseY>=0 && mouseY<200){
   b.square [0][0]=t;
  }

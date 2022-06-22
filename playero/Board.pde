@@ -50,9 +50,14 @@ public class Board{
    for(int j = 0; j < 5; j++){
      if (square [i][j] == 1){
         circle((i*200)+100,(j*200)+100,100);
+        println(g.t);
+        println(g.turnCount);
     }else if (square [i][j] == 2){
     fill(255,255,255);
       circle((i*200)+100,(j*200)+100,100);
+      println(g.t);
+        println(g.turnCount);
+      
     }
    }
  }
