@@ -47,9 +47,11 @@ public class Board{
   fill(0,0,0); 
   rect(800,800,200,200); 
  for (int i=0; i<5; i++){
- if (square [i][i] == 1){
-  circle((i*200)+100,(i*200)+100,100);
-  }
+   for(int j = 0; j < 5; j++){
+     if (square [i][j] == 1){
+        circle((i*200)+100,(j*200)+100,100);
+    }
+   }
  }
  
  
