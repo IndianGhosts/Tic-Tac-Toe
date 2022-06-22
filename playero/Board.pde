@@ -1,10 +1,10 @@
 public class Board{
-   int [][] square = {
-    {0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0},
-    {0, 0, 0, 0, 0}
+   gamePiece [][] square = {
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null}
   };
  public Board(){
    
