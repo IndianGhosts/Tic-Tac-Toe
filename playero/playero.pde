@@ -1,4 +1,3 @@
-int turnCount;
 gamePiece g = new gamePiece();
 Board b = new Board();
 void setup(){
@@ -15,8 +14,4 @@ void draw(){
   }
   
  
-}
-
-void mouseClicked(){
-  turnCount = turnCount + 1;
 }
