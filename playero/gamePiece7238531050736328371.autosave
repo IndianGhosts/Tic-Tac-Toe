@@ -10,6 +10,7 @@ public void drawGamePiece(){
   }else{
   t=2;
   }
+  turnCount=turnCount+1;
   if (mouseX>=0 && mouseX<200 && mouseY>=0 && mouseY<200){
  if (t%2==0){
   drawSquare(0,0);
@@ -172,13 +173,15 @@ if (t%2==0){
   } 
  }
  if (mouseX>=800 && mouseX<1000 && mouseY>=600 && mouseY<800){
- if (t%2==0){
+ println(mouseX);
+   if (t%2==0){
   drawSquare(4,3);
   }else{
   drawCircle (4,3);
   }
  if (mouseX>=800 && mouseX<1000 && mouseY>=800 && mouseY<1000){
-  if (t%2==0){
+  println(mouseX);
+   if (t%2==0){
   drawSquare(4,4);
   }else{
   drawCircle (4,4);
