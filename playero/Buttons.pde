@@ -3,16 +3,25 @@ public class Buttons{
   int y;
   int w;
   int h;
-  
+  boolean hasBeenClicked;
   public Buttons(int newX, int newY, int newW, int newH){
-    newX = 20;
-    newY = 20;
-    newW = 30;
-    newH = 30;
+    x = newX;
+    y = newY;
+    w = newW;
+    h = newH;
+    hasBeenClicked = false;
   }
   
   public void drawsButton(){
-    rect(20, 20, 30, 30); 
+    rect(x, y, w, h); 
+  }
+  
+  public boolean isClicked(){
+    return hasBeenClicked; 
+  }
+  
+  public void buttonClick(){
+   hasBeenClicked = true; 
   }
  
 }
