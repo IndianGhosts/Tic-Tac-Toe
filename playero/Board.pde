@@ -11,7 +11,7 @@ public class Board{
  }
  
  public void drawBoard(){
-   background(0, 0, 0);
+
     stroke(0,220,40);
   line(0,200,1000,200);
   stroke(0,220,40);

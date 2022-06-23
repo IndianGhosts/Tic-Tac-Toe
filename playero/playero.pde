@@ -16,7 +16,7 @@ void setup(){
 void draw(){
   if(!startB.isClicked()){
     println("Not clicked");
-    m.drawMenu();
+
   }else{
     m.moveMenu();
     b.drawBoard();
