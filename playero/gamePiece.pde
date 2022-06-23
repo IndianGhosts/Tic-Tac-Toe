@@ -190,11 +190,15 @@ public void drawGamePiece(){
   public void drawSquare(int g, int p){
  if (b.square[g][p] == null){
    square((g*200)+50,(p*200)+50,100);
+   b.square[g][p]=b.id1;
+   turnCount++;
  }
  }
  public void drawCircle(int g, int p){
  if (b.square[g][p] == null){
    circle((g*200)+100,(p*200)+100,100);
+   b.square[g][p]=b.id2;
+   turnCount++;
  }
  }
  

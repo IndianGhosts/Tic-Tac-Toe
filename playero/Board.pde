@@ -6,6 +6,8 @@ public class Board{
     {null, null, null, null, null},
     {null, null, null, null, null}
   };
+  gamePiece id1=new gamePiece();
+  gamePiece id2=new gamePiece();
  public Board(){
    
  }
@@ -30,23 +32,6 @@ public class Board{
   stroke(0,220,40);
   line(800,0,800,1000);
 
-  fill(0,0,0); 
-  rect(0,0,200,200);
-  fill(0,0,0); 
-  rect(0,200,200,200);  
-  fill(0,0,0); 
-  rect(0,600,200,200);
-  fill(0,0,0); 
-  rect(0,800,200,200); 
-
-  fill(0,0,0); 
-  rect(200,0,200,200);
-  fill(0,0,0); 
-  rect(400,200,200,200);  
-  fill(0,0,0); 
-  rect(600,600,200,200);
-  fill(0,0,0); 
-  rect(800,800,200,200); 
  }
  
  
