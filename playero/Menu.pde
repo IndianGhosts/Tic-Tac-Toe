@@ -12,7 +12,7 @@ public class Menu{
   public void moveMenu(){
    image(pic, -1000, -1000); 
   }
-/*int justOne = 0;
+int justOne = 0;
   
   public Menu(){
     
@@ -29,6 +29,6 @@ public class Menu{
       }
       
       
-  }*/
+  }
   
 }

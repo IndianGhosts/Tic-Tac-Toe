@@ -3,10 +3,9 @@ int mouseCount;
 Menu m;
 gamePiece g = new gamePiece();
 Board b = new Board();
-
 Buttons startButton = new Buttons(0, 1000, 1000, 100);
-
-void setup(){
+//Necessary class object and varibles are defined above
+void setup(){//The setup function that details the basic functions of the game
   
   // Create the font from the .ttf file in the data folder
   
@@ -26,7 +25,7 @@ void draw(){
       g.drawGamePiece();
     }
   }
-}
+}//the draw function is used to continuesly draw 
 
 void newGame(){
     b = new Board();

@@ -1,0 +1,40 @@
+PImage runOnce;
+int mouseCount;
+Menu m;
+gamePiece g = new gamePiece();
+Board b = new Board();
+Buttons startB = new Buttons(0, 0, 1000, 100);
+   gamePiece [][] square = {
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null},
+    {null, null, null, null, null}
+  };
+void setup(){
+  background(0,0,0);
+  size(1000,1000);
+  runOnce = loadImage("pixil-frame-0.png");
+  m = new Menu(runOnce);
+  mouseCount = 0;
+}
+
+void draw(){
+  if(!startB.isClicked()){
+
+  }else{
+    m.moveMenu();
+    b.drawBoard();
+
+  }
+
+  
+}
+
+void mouseClicked(){
+  b.drawBoard();
+  g.drawGamePiece();
+  if(mouseCount == 0){
+   startB.buttonClick(); 
+  }
+}
