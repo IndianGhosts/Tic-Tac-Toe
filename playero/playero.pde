@@ -3,37 +3,33 @@ int mouseCount;
 Menu m;
 gamePiece g = new gamePiece();
 Board b = new Board();
-Buttons startB = new Buttons(0, 0, 1000, 100);
+
+Buttons startButton = new Buttons(0, 1000, 1000, 100);
 
 void setup(){
+  
+  // Create the font from the .ttf file in the data folder
+  
   background(0,0,0);
-  size(1000,1000);
+  size(1000,1100);
   runOnce = loadImage("pixil-frame-0.png");
   m = new Menu(runOnce);
   mouseCount = 0;
+  newGame();
 }
 
 void draw(){
-  if(!startB.isClicked()){
-    println("Not clicked");
-
-  }else{
-    m.moveMenu();
-    b.drawBoard();
-    println("clicked");
-  }
-  
-  if(mousePressed == true){
-  b.drawBoard();
-  }
   if (mousePressed==true){
-    g.drawGamePiece();
+    if (mouseY > startButton.y) {
+      newGame();
+    } else {
+      g.drawGamePiece();
+    }
   }
-  
 }
 
-void mouseClicked(){
-  if(mouseCount == 0){
-   startB.buttonClick(); 
-  }
+void newGame(){
+    b = new Board();
+    b.drawBoard();
+    startButton.drawsButton();
 }

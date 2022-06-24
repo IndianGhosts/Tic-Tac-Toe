@@ -1,2 +1,2 @@
-Buttons startButton;
-Buttons quitButton;
+//Buttons startButton;
+//Buttons quitButton;

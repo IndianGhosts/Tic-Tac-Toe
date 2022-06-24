@@ -5,6 +5,7 @@ public gamePiece(){
 }
 
 public void drawGamePiece(){
+  fill(255);
   if (turnCount % 2==0){
   t=1;
   }else{
