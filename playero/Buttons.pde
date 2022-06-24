@@ -4,6 +4,7 @@ public class Buttons{
   int w;
   int h;
   boolean hasBeenClicked;
+    
   public Buttons(int newX, int newY, int newW, int newH){
     x = newX;
     y = newY;
@@ -13,16 +14,10 @@ public class Buttons{
   }
   
   public void drawsButton(){
+    fill(200,0,0);
     rect(x, y, w, h); 
   }
-  
-  public boolean isClicked(){
-    return hasBeenClicked; 
-  }
-  
-  public void buttonClick(){
-   hasBeenClicked = true; 
-  }
+
  
 }
   
