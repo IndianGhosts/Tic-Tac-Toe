@@ -1,205 +1,306 @@
 public class gamePiece{
 int turnCount;
 int t;
+int g;
+int p;
 public gamePiece(){
 }
 
 public void drawGamePiece(){
-  fill(255);
   if (turnCount % 2==0){
   t=1;
-  }else{
+  }else if (turnCount % 2==1){
   t=2;
   }
+  println(turnCount);
+println(t);
   if (mouseX>=0 && mouseX<200 && mouseY>=0 && mouseY<200){
-   if (t%2==0){
+   println("test");
+    if (t==1){
     drawSquare(0,0);
-    }else{
+    square[0][0]=b.id1;
+    turnCount++;
+    t++;
+    println("square check");
+    }else if (t==2){
     drawCircle (0,0);
-    }
-   }
+    square[0][0]=b.id2;
+    turnCount++;
+    println("circle check");
+  }
+  }
    if (mouseX>=00 && mouseX<200 && mouseY>=200 && mouseY<400){
-    if (t%2==0){
+    if (t==1){
     drawSquare(0,1);
+    square[0][1]=b.id1;
+    turnCount++;
+    println("square check");
     }else{
     drawCircle (0,1);
+    square[0][1]=b.id2;
+    turnCount++;
+    println("circle check");
     }
    }
    if (mouseX>=0 && mouseX<200&& mouseY>=400 && mouseY<600){
-    if (t%2==0){
+    if (t==1){
     drawSquare(0,2);
+    square[0][2]=b.id1;
+    turnCount++;
     }else{
     drawCircle (0,2);
+    square[0][2]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=0 && mouseX<200 && mouseY>=600 && mouseY<800){
-    if (t%2==0){
+    if (t==1){
     drawSquare(0,3);
+    square[0][3]=b.id1;
+    turnCount++;
     }else{
     drawCircle (0,3);
+    square[0][3]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=0 && mouseX<200 && mouseY>=800 && mouseY<1000){
-    if (t%2==0){
+    if (t==1){
     drawSquare(0,4);
+    square[0][4]=b.id1;
+    turnCount++;
     }else{
     drawCircle (0,4);
+    square[0][4]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=200 && mouseX<400 && mouseY>=0 && mouseY<200){
-    if (t%2==0){
+    if (t==1){
     drawSquare(1,0);
+    square[1][0]=b.id1;
+    turnCount++;
     }else{
     drawCircle (1,0);
+    square[1][0]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=400 && mouseX<600 && mouseY>=0 && mouseY<200){
-    if (t%2==0){
+    if (t==1){
     drawSquare(2,0);
+    square[2][0]=b.id1;
+    turnCount++;
     }else{
     drawCircle (2,0);
+    square[2][0]=b.id2;
+    turnCount++;
     } 
    }
    if (mouseX>=600 && mouseX<800 && mouseY>=0 && mouseY<200){
     if (t%2==0){
     drawSquare(3,0);
+    square[3][0]=b.id1;
+    turnCount++;
     }else{
     drawCircle (3,0);
+    square[3][0]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=800 && mouseX<1000 && mouseY>=0 && mouseY<200){
    if (t%2==0){
     drawSquare(4,0);
+    square[4][0]=b.id1;
+    turnCount++;
     }else{
     drawCircle (4,0);
+    square[4][0]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=200 && mouseX<400 && mouseY>=200 && mouseY<400){
     if (t%2==0){
     drawSquare(1,1);
+    square[1][1]=b.id1;
+    turnCount++;
     }else{
     drawCircle (1,1);
+    square[1][1]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=200 && mouseX<400 && mouseY>=400 && mouseY<600){
     if (t%2==0){
     drawSquare(1,2);
+    square[1][2]=b.id1;
+    turnCount++;
     }else{
     drawCircle (1,2);
+    square[1][2]=b.id2;
+    turnCount++;
     } 
    }
    if (mouseX>=200 && mouseX<400 && mouseY>=600 && mouseY<800){
     if (t%2==0){
     drawSquare(1,3);
+    square[1][3]=b.id1;
+    turnCount++;
     }else{
     drawCircle (1,3);
+    square[1][3]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=200 && mouseX<400 && mouseY>=800 && mouseY<1000){
     if (t%2==0){
     drawSquare(1,4);
+    square[1][4]=b.id1;
+    turnCount++;
     }else{
     drawCircle (1,4);
+    square[1][4]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=400 && mouseX<600 && mouseY>=200 && mouseY<400){
    if (t%2==0){
     drawSquare(2,1);
+    square[2][1]=b.id1;
+    turnCount++;
     }else{
     drawCircle (2,1);
+    square[2][1]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=400 && mouseX<600 && mouseY>=400 && mouseY<600){
     if (t%2==0){
     drawSquare(2,2);
+    square[2][2]=b.id1;
+    turnCount++;
     }else{
     drawCircle (2,2);
+    square[2][2]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=400 && mouseX<600 && mouseY>=600 && mouseY<800){
     if (t%2==0){
     drawSquare(2,3);
+    square[2][3]=b.id1;
+    turnCount++;
     }else{
     drawCircle (2,3);
+    turnCount++;
     }
    }
    if (mouseX>=400 && mouseX<600 && mouseY>=800 && mouseY<1000){
   if (t%2==0){
     drawSquare(2,4);
+    square[2][4]=b.id1;
+    turnCount++;
     }else{
     drawCircle (2,4);
+    turnCount++;
     }
    }
    if (mouseX>=600 && mouseX<800 && mouseY>=200 && mouseY<400){
     if (t%2==0){
     drawSquare(3,1);
+    square[3][1]=b.id1;
+    turnCount++;
     }else{
     drawCircle (3,1);
+    turnCount++;
     }
    }
    if (mouseX>=600 && mouseX<800 && mouseY>=400 && mouseY<600){
     if (t%2==0){
     drawSquare(3,2);
+    square[3][2]=b.id1;
+    turnCount++;
     }else{
     drawCircle (3,2);
+    turnCount++;
     }
    }
    if (mouseX>=600 && mouseX<800 && mouseY>=600 && mouseY<800){
     if (t%2==0){
     drawSquare(3,3);
+    square[3][3]=b.id1;
+    turnCount++;
     }else{
     drawCircle (3,3);
+    turnCount++;
     } 
    }
    if (mouseX>=600 && mouseX<800 && mouseY>=800 && mouseY<1000){
     if (t%2==0){
     drawSquare(3,4);
+    square[3][4]=b.id1;
+    turnCount++;
     }else{
     drawCircle (3,4);
+    square[3][4]=b.id2;
+    turnCount++;
     } 
    }
    if (mouseX>=800 && mouseX<1000 && mouseY>=200 && mouseY<400){
    if (t%2==0){
     drawSquare(4,1);
+    square[4][1]=b.id1;
+    turnCount++;
     }else{
     drawCircle (4,1);
+    square[4][1]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=800 && mouseX<1000 && mouseY>=400 && mouseY<600){
     if (t%2==0){
     drawSquare(4,2);
+    square[4][2]=b.id1;
+    turnCount++;
     }else{
     drawCircle (4,2);
+    square[4][2]=b.id2;
+    turnCount++;
     } 
    }
    if (mouseX>=800 && mouseX<1000 && mouseY>=600 && mouseY<800){
    if (t%2==0){
     drawSquare(4,3);
+    square[4][3]=b.id1;
+    turnCount++;
     }else{
     drawCircle (4,3);
+    square[4][3]=b.id2;
+    turnCount++;
     }
    }
    if (mouseX>=800 && mouseX<1000 && mouseY>=800 && mouseY<1000){
     if (t%2==0){
     drawSquare(4,4);
+    println("test");
+    square[4][4]=b.id1;
+    turnCount++;
     }else{
     drawCircle (4,4);
+    square[4][4]=b.id2;
+    println("test2");
+    turnCount++;
     }
-    
    } 
 }
   public void drawSquare(int g, int p){
- if (b.square[g][p] == null){
+ if (square[g][p] == null){
    square((g*200)+50,(p*200)+50,100);
-   b.square[g][p]=b.id1;
-   turnCount++;
  }
  }
  public void drawCircle(int g, int p){
- if (b.square[g][p] == null){
+ if (square[g][p] == null){
    circle((g*200)+100,(p*200)+100,100);
-   b.square[g][p]=b.id2;
-   turnCount++;
  }
  }
  

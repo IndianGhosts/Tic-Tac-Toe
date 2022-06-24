@@ -1,0 +1,24 @@
+int turnCount;
+gamePiece g = new gamePiece();
+Board b = new Board();
+void setup(){
+  background(0,0,0);
+  size(1000,1000);
+  turnCount = 0;
+  startButton = new Buttons(150, 100, 10, 10);
+
+}
+
+void draw(){
+  b.drawBoard();
+  if (mousePressed==true){
+    g.drawGamePiece();
+     rect(25, 25, 50, 50);
+  }
+  
+ 
+}
+
+void mouseClicked(){
+  turnCount = turnCount + 1;
+}
