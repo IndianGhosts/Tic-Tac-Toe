@@ -4,6 +4,9 @@ Menu m;
 gamePiece g = new gamePiece();
 Board b = new Board();
 Buttons startButton = new Buttons(0, 1000, 1000, 100);
+String resetText="Reset Button";
+String instructionText="Click the Red Button at the Bottom to reset the  tic tac toe game once you have won";
+String arrow="↓";
 //Necessary class object and varibles are defined above
 void setup(){//The setup function that details the basic functions of the game
   
@@ -19,10 +22,13 @@ void setup(){//The setup function that details the basic functions of the game
 }
 
 void draw(){
-      text("Click the Red Button at the Bottom to reset the  tic tac toe game once you have won",350,950);
-    text("Reset Button",470,970);
-    text("↓",490,980);
+      text(instructionText,350,950);
+    text(resetText,470,970);
+    text(arrow,490,980);
   if (mousePressed==true){
+    instructionText=" ";
+    resetText=" ";
+    arrow=" ";
     if (mouseY > startButton.y) {
       newGame();
     } else {
