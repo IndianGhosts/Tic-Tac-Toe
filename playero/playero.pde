@@ -10,12 +10,12 @@ void setup(){//The setup function that details the basic functions of the game
   // Create the font from the .ttf file in the data folder
   
   background(0,0,0);
-<<<<<<< Updated upstream
   size(1000,1100);
   runOnce = loadImage("pixil-frame-0.png");
   m = new Menu(runOnce);
   mouseCount = 0;
   newGame();
+  g.turnCount = 0;
 }
 
 void draw(){
@@ -25,21 +25,12 @@ void draw(){
     } else {
       g.drawGamePiece();
     }
-=======
-  size(1000,1000);
-  turnCount = 0;
-  startButton = new Buttons(150, 100, 10, 10);
+    text("Click the Red Button at the Bottom to reset the game once you have won",350,950);
+    text("Reset Button",470,970);
+    text("↓",490,980);
+
 }
 
-void draw(){
-  
-      println(mouseX);
-    println(mouseY);
-  if (mousePressed==true){
-    g.drawGamePiece();
-b.drawBoard();
->>>>>>> Stashed changes
-  }
 }//the draw function is used to continuesly draw 
 
 void newGame(){
