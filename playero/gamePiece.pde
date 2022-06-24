@@ -2,7 +2,7 @@ public class gamePiece{
 int turnCount;
 int t;
 public gamePiece(){
-}
+}//varibles that are necessary to 
 
 public void drawGamePiece(){
   fill(255);

@@ -5,14 +5,14 @@ public class Board{
     {null, null, null, null, null},
     {null, null, null, null, null},
     {null, null, null, null, null}
-  };
+  };//This is a matrix that is used to store the values of the shapes id
   gamePiece id1=new gamePiece();
   gamePiece id2=new gamePiece();
  public Board(){
    
  }
  
- public void drawBoard(){
+ public void drawBoard(){//this is a function that is used to draw the board of the tic tac toe game
   fill(0);
   rect(0,0,width,height);
   stroke(0,220,40);

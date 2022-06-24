@@ -19,22 +19,22 @@ void setup(){//The setup function that details the basic functions of the game
 }
 
 void draw(){
+      text("Click the Red Button at the Bottom to reset the  tic tac toe game once you have won",350,950);
+    text("Reset Button",470,970);
+    text("↓",490,980);
   if (mousePressed==true){
     if (mouseY > startButton.y) {
       newGame();
     } else {
       g.drawGamePiece();
     }
-    text("Click the Red Button at the Bottom to reset the game once you have won",350,950);
-    text("Reset Button",470,970);
-    text("↓",490,980);
+
 
 }
-
-}//the draw function is used to continuesly draw 
+}//the draw function is used to continuesly draw things such as the gamePieces and the board
 
 void newGame(){
     b = new Board();
     b.drawBoard();
     startButton.drawsButton();
-}
+}//this is a function that when the red reset button on the bottom of the screen is pressed will wipe the game and reset it.
