@@ -1,6 +1,7 @@
 public class gamePiece{
 int turnCount;
 int t;
+int[] wins={};
 public gamePiece(){
 }//varibles that are necessary to 
 
@@ -192,6 +193,7 @@ public void drawGamePiece(){
  if (b.square[g][p] == null){
    square((g*200)+50,(p*200)+50,100);
    b.square[g][p]=b.id1;
+   winner();
    turnCount++;
  }
  }
@@ -199,10 +201,18 @@ public void drawGamePiece(){
  if (b.square[g][p] == null){
    circle((g*200)+100,(p*200)+100,100);
    b.square[g][p]=b.id2;
+   winner();
    turnCount++;
  }
  }
- 
+ public void winner(){
+ println("test");
+   if (b.square[0][0]==b.id1){
+    int[]winScenario= append(wins, 0);
+    println(winScenario);
+   }else{
+     println(wins);
+ }
  
  
  
@@ -211,4 +221,4 @@ public void drawGamePiece(){
  
 }
 
- 
+}

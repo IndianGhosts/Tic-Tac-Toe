@@ -1,3 +1,4 @@
+gamePiece o = new gamePiece();
 public class Board{
    gamePiece [][] square = {
     {null, null, null, null, null},
@@ -32,7 +33,6 @@ public class Board{
   line(600,0,600,1000);
   stroke(0,220,40);
   line(800,0,800,1000);
-
  }
  
  

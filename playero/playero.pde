@@ -35,7 +35,6 @@ void draw(){
       g.drawGamePiece();
     }
 
-
 }
 }//the draw function is used to continuesly draw things such as the gamePieces and the board
 
